@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-sm bg">
+        <div class="container justify-content-center">
+          <div class="navbar" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button id="b-index" type="button" class="btn"><a class="nav-link" href="/index.html">Home</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="b-u-events" type="button" class="btn"><a class="nav-link" href="/html/u_events.html">Upcoming Events</a></button>
+                
+              </li>
+              <li class="nav-item">
+                <button id="b-p-events" type="button" class="btn" onclick="pastFunction()"> <a class="nav-link" href="/html/p_events.html">Past Events</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="b-stats" type="button" class="btn"><a class="nav-link" href="/html/stats.html">Stats</a></button>
+                
+              </li>
+              <li class="nav-item">
+                <button id="b-contact" type="button" class="btn"><a class="nav-link" href="/html/contact.html">Contact</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Stats</h1>
+    </header>
+
+    
+   <!--ILUSTRATION-->
+   <div class="container d-flex justify-content-center mt-5 mb-5">
+    <img
+      src="../assets/img5.png"
+      alt="Click Here Ilsutration"
+      class="img-fluid"
+      width="200"
+    />
+  </div>
+
+
+<div id="app">
+        <!--                                                  TABLA                      -->
+        <div class="container-fluid mt-5 mb-5">
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-secondary" colspan="3">Events statistics</th>
+                  </tr>
+                  <tr>
+                    <th>Events with the highest percentage of attendance</th>
+                    <th>Events with the lowest percentage of attendance</th>
+                    <th>Event with larger capacity</th>
+                  </tr>
+                </thead>
+                <tbody id="table">
+                    <td>📌 {{highAttendance.name}} <br> Attendance: {{highAttendance.assistance}}%</td>
+                    <td>📌 {{lowAttendance.name}} <br> Attendance: {{lowAttendance.assistance}}%</td>
+                    <td>📌 {{largerCapacity.name}} <br> Attendance: {{largerCapacity.capacity}}</td>
+                </tbody>
+              
+        
+                <tr>
+                  <th class="table-secondary" colspan="3">Upcoming events statistics by category</th>
+                </tr>
+                <tr>
+                  <td>Category</td>
+                  <td>Revenues</td>
+                  <td>Percentage of attendance</td>
+                </tr>
+                <tr v-for="upcoming in upcomingStatistics">
+                  <td>{{upcoming.name}}</td>
+                  <td>💲{{upcoming.ingresos}}</td>
+                  <td>👤{{upcoming.estimate}} %</td>
+                </tr>
+                <tr>
+                  <th  class="table-secondary" colspan="3">Past Events statistics by category</th>
+                </tr>
+                <tr>
+                  <td>Category</td>
+                  <td>Revenues</td>
+                  <td>Percentage of attendance</td>
+                </tr>
+                <tr v-for="past in pastStatistics">
+                  <td>{{past.name}}</td>
+                  <td>💲{{past.ingresos}}</td>
+                  <td>👤{{past.estimate}} %</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-2">
+            </div>
+          </div>
+        </div>
+      
+        <!--                                                  f                      -->
+</div>
+
+<!--FOOTER-->
+<div class="card mt-5">
+  <div class="card-body">
+    <blockquote class="blockquote d-flex justify-content-center">
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/instagram.png" alt="instagram logo" width="35"></a>
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/facebook.png" alt="facebook logo" width="35"></a>
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/whatsapp.png" alt="whatsapp logo" width="35"></a>
+      <img src="../assets/logo.png" alt="amazing events logo"  class="img-fluid" width="150">
+    </blockquote>
+  </div>
+</div>
+
+
+    <!--JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="../script/vue.js"></script>
+  </body>
+</html>

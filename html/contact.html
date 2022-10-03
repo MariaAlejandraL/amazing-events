@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-sm bg">
+        <div class="container justify-content-center">
+          <div class="navbar" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button id="b-index" type="button" class="btn"><a class="nav-link" href="/index.html">Home</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="b-u-events" type="button" class="btn"><a class="nav-link" href="/html/u_events.html">Upcoming Events</a></button>
+                
+              </li>
+              <li class="nav-item">
+                <button id="b-p-events" type="button" class="btn" onclick="pastFunction()"> <a class="nav-link" href="/html/p_events.html">Past Events</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="b-stats" type="button" class="btn"><a class="nav-link" href="/html/stats.html">Stats</a></button>
+                
+              </li>
+              <li class="nav-item">
+                <button id="b-contact" type="button" class="btn"><a class="nav-link" href="/html/contact.html">Contact</a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Contact</h1>
+    </header>
+
+   <!--ILUSTRATION-->
+   <div class="container d-flex justify-content-center mt-5 mb-5">
+    <img
+      src="../assets/img66.png"
+      alt="Click Here Ilsutration"
+      class="img-fluid"
+      width="250"
+    />
+  </div>
+
+
+      <!--                                                  CONTACT                       -->
+  <div class="container-fluid mt-5 ">
+    <div class="row m-5 d-flex justify-content-center">
+     
+        <div class="col-sm-6 border contact p-5 mt-5 mb-5 ">
+          <div class="input-group mb-3 ">
+            <span class="input-group-text" id="basic-addon1">Name 😃</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email 📧 </span>
+            <input
+              type="email"
+              class="form-control"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Message ✏️</span>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+            ></textarea>
+        </div>
+       <button class="btn btn-warning mt-5" type="submit">Submit</button>
+    </div>
+  </div>
+  <!--                                                  f                      -->
+
+<!--FOOTER-->
+<div class="card mt-5">
+  <div class="card-body">
+    <blockquote class="blockquote d-flex justify-content-center">
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/instagram.png" alt="instagram logo" width="35"></a>
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/facebook.png" alt="facebook logo" width="35"></a>
+      <a href="https://www.google.com/"><img class="m-2" src="../assets/whatsapp.png" alt="whatsapp logo" width="35"></a>
+      <img src="../assets/logo.png" alt="amazing events logo"  class="img-fluid" width="150">
+    </blockquote>
+  </div>
+</div>
+
+
+    <!--JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="../script/vue.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:wght@300&family=Pacifico&display=swap');
+header , bg{
+  background-color: #fce373;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+  padding: 10rem;
+  font-size: 6rem;
+  color: black;
+
+}
+
+h3{
+    font-family: 'Pacifico', cursive;
+    color: black;
+    display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+}
+
+span{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4rem;
+}
+
+.footer {
+    background-color: #9D6C4D;
+  width: 20vw;
+}
+
+.img{
+    width: 2rem;
+    margin: 2rem;
+}
+
+a{
+    color: #005B47 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 321px) {
+
+    h1{
+        font-size: 4rem;
+        padding: 5rem;
+    }
+    h3{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    h1{
+        font-size: 4rem;
+        padding: 5rem;
+    }
+    h3{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    h1{
+        font-size: 4rem;
+        padding: 5rem;
+    }
+    h3{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
